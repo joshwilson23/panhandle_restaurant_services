@@ -40,19 +40,21 @@ if ($_POST["submit"]) {
 				<img src="https://irp-cdn.multiscreensite.com/08fd31d2/dms3rep/multi/desktop/panhandlerestaurant-464x96.gif">
 			</div>
 				<h1>Welcome to the Career Page for Panhandle Restaurant Services</h1>
+
+	<!--Application Body-->
 					<br>
 				<h2>Please fill out the application to the best of your ability and then submit it for review! We appreciate your interest in working with us.</h2>
 
 					<form method="post" action="careers.php">
-						<label>Full Name:</label>
-						<input type="text" name="applicantName">
+						<label for="name">Full Name:</label>
+						<input type="text" name="applicantName" id="applicationName">
 
-						<label>Contact Email:</label>
-						<input type="email" name="applicantEmail">
+						<label for="email">Contact Email:</label>
+						<input type="email" name="applicantEmail" id="applicantEmail">
 
-						<label>Employment History-10 years:</label>
+						<label for="employment">Employment History-10 years:</label>
 						<textarea rows="20" cols="20" name="employmentHistory"></textarea>
-						<input type="submit" name="submit" <?php echo $thankYou ?>
+						<input type="submit" name="send" value="Send Completed Application"> <?php echo $thankYou ?>
 					</form>
 
 </body>
