@@ -6,8 +6,7 @@ if (isset($_POST["send"])) {
 	$subject = 'Application for Employment';
 	$message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
 	$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
-	$message .= 'Employment Desired: ' . $_POST['fullTypeDesired'];
-	$message .= '' . $_POST['typeDesiredPart'];
+	$message .= 'Employment Desired: ' . $_POST['emType'];
 	$message .= 'Employment Application: ' . $_POST['employment'];
 	$headers = "From: noReply@panhandlerestaurantservices.com\r\n";
 	$headers .= 'Content-Type: text/plain; charset=utf-8';
