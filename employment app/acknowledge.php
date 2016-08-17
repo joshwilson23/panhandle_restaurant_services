@@ -5,6 +5,15 @@ if (isset($_POST["send"])) {
 	$to = 'it@panhandlerestaurantservices.com'; //email recipient 
 	$subject = 'Application for Employment';
 	$message = 'Name: ' . $_POST['name'] . "\r\n\r\n";
+	$message .= 'Date: ' . $_POST['date'] . "\r\n\r\n";
+	$message .= 'Present Address: ' . $_POST['address'] . "\r\n\r\n";
+	$message .= 'Length at present address: ' . $_POST['lengthAddress'] . "\r\n\r\n";
+	$message .= 'Social Security: ' . $_POST['ssn'] . "\r\n\r\n";
+	$message .= 'Telephone number: ' . $_POST['telephone'] . "\r\n\r\n";
+	$message .= 'Age if under 18: ' . $_POST['age'] . "\r\n\r\n";
+	$message .= 'Position applied for: ' . $_POST['position'] . "\r\n\r\n";
+	$message .= 'Salary desired: ' . $_POST['salary'] . "\r\n\r\n";
+	$message .= 'Days/hours available to work: ' . $_POST['nopref'] . "\r\n\r\n";
 	$message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
 	$message .= 'Employment Desired: ' . $_POST['emType'] . "\r\n\r\n";
 	$message .= 'Employment Application: ' . $_POST['employment'] . "\r\n\r\n";
@@ -34,7 +43,7 @@ if (isset($_POST["send"])) {
 -->
 <html>
 <head>
-	<title></title>
+	<title>Thank you!</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 	

@@ -27,13 +27,42 @@
 					<br>
 					<div>
 				<h2>Please fill out the application to the best of your ability and then submit it for review! We appreciate your interest in working with us.</h2>
+				<h3></h3>
 
 					<form method="post" action="/acknowledge.php">
 		 
 						<label for="name">Full Name: </label>
 						<input type="text" name="name" id="applicationName">
 
-					
+						<label for="date">Date: </label>
+						<input type="text" name="date" id="applicationDate">
+
+						<label for="presentAddress">Present Address: </label>
+						<input type="text" name="address" id="presentAddress">
+
+						<label for="timeAtAddress">How long at present address: </label>
+						<input type="text" name="lengthAddress" id="lengthAddress">
+
+						<label for="ssn">Social Security No: </label>
+						<input type="number" name="ssn" id="socialSecurity">
+
+						<label for="telephone">Telephone number: </label>
+						<input type="tel" name="telephone" id="telephone">
+
+						<label for="age">If under 18, please list age: </label>
+						<input type="number" name="age" id="age">
+
+						<label for="position">Position applied for: </label>
+						<input type="text" name="position" id="positionAppliedFor">
+
+						<label for="salary">Salary desired (be specific): </label>
+						<input type="number" name="salary" min="1" step="any">
+
+						<label for="daysAvailable">Days/Hours available to work: </label>
+						<tr>
+							<td><label for="nopref">No pref: </label><input type="text" name="nopref"></td>
+						</tr>
+
 						<label for="email">Contact Email: </label>
 						<input type="email" name="email" id="applicantEmail">
 
